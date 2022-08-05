@@ -12,7 +12,7 @@ const MoviePage = () => {
         <div className={'wrap'}>
 
             <Header/>
-            <Outlet/>
+             <Outlet/>
             <Footer/>
 
         </div>

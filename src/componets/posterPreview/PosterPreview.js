@@ -13,7 +13,7 @@ const PosterPreview = ({collectionMovie}) => {
                     <div className={'content'}>
                         <h3>{collectionMovie.title}</h3>
                         <div>
-                            <StarsRating stars={6} rating={collectionMovie['rating']}/>
+                             <StarsRating stars={6} rating={collectionMovie['rating']}/>
                         </div>
                     </div>
                 </div>
