@@ -1,7 +1,7 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 
-import { Carousel } from 'react-carousel-minimal';
+import {Carousel} from 'react-carousel-minimal';
 
 import css from './MovieSlayderModule.css'
 
@@ -12,9 +12,9 @@ const MovieSlayder = () => {
 
     const dispatch = useDispatch();
 
-    useEffect(()=>{
+    useEffect(() => {
         dispatch(moviedbAction.setMoviedbImg())
-    },[])
+    }, [])
 
     const {moviedbImg} = useSelector(state => state.movieCard);
 
@@ -29,15 +29,13 @@ const MovieSlayder = () => {
         fontWeight: 'bold',
 
     }
-    const slideImageFit ={
-
-    }
+    const slideImageFit = {}
 
     return (
         <div className={'slideWrap'}>
 
-            { moviedbImg && <div>
-                <div style={{ textAlign: "center", width:'1100px'}}>
+            {moviedbImg && <div>
+                <div style={{textAlign: "center", width: '1100px'}}>
 
                     <div style={{padding: "0 20px"}}>
                         <Carousel

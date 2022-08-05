@@ -12,11 +12,11 @@ const MoviesListCardPage = () => {
 
     const dispatch = useDispatch();
 
-    useEffect(()=>{
+    useEffect(() => {
 
-     dispatch(moviedbAction.getMovieById({id}))
+        dispatch(moviedbAction.getMovieById({id}))
 
-    },[id])
+    }, [id])
 
     const {movieById} = useSelector(state => state.movieCard);
 
@@ -24,11 +24,14 @@ const MoviesListCardPage = () => {
     return (
         <div className={'CardPage_wrap'}>
 
-            { movieById.length !== 0 && movieById.map(movieById => <MovieInfo key={movieById.id} movieById={movieById}/>)}
+            {movieById.length  && movieById.map(movieById => <MovieInfo key={movieById.id}
+                                                                             movieById={movieById}/>)}
 
-            {movieById.length !==0 && movieById.map(movieById => <MoviesListCard movieById={movieById} key={movieById.id}/>)}
+            {movieById.length  && movieById.map(movieById => <MoviesListCard movieById={movieById}
+                                                                                  key={movieById.id}/>)}
 
-            {movieById.length !==0 && movieById.map(movieById => <PostersPreviem movieById={movieById} key={movieById.id}/>)}
+            {movieById.length  && movieById.map(movieById => <PostersPreviem movieById={movieById}
+                                                                                  key={movieById.id}/>)}
 
 
         </div>

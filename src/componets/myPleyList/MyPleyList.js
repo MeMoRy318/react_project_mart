@@ -1,9 +1,9 @@
 import {Link} from "react-router-dom";
+import {useDispatch} from "react-redux";
 
 import css from './moviesList.module.css'
 
 import {StarsRating} from "../starsRating/StarsRating";
-import {useDispatch} from "react-redux";
 import {moviedbAction} from "../../redux";
 
 const MyPleyList = ({myPleyList}) => {

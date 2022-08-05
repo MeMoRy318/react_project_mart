@@ -5,7 +5,6 @@ import {MovieSlayder} from "../movieSlayder/MovieSlayder";
 import {SwitchToggle} from "../switchToggle/SwitchToggle";
 
 import ccs from './headerwrap.css'
-import {HeaderAudi} from "../movieInfo/headerAudi/HeaderAudi";
 
 const Header = () => {
     return (
@@ -16,7 +15,7 @@ const Header = () => {
                 <Link to={'/playList'}>
                     <button className={'trailer'}>Play List</button>
                 </Link>
-                <HeaderAudi/>
+
                 <SwitchToggle/>
 
             </div>
