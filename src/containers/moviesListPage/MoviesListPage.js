@@ -59,7 +59,7 @@ const MoviesListPage = () => {
 
 
                 <button className={'btn'}
-                    disabled={total_pages === page_}
+                    disabled={total_pages <= page_}
                     onClick={nextPage}><i
                     className="arrow right"></i></button>
             </div>
