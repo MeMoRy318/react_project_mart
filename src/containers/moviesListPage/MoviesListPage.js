@@ -34,7 +34,6 @@ const MoviesListPage = () => {
         const page = +queri.get('page') - 1
         setQuery({page: `${page}`})
     }
-
     function nextPage() {
         const page = +queri.get('page') + 1
         setQuery({page: `${page}`})
