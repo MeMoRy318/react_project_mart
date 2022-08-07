@@ -23,7 +23,7 @@ const MoviesListPage = () => {
 
     const pages = []
 
-    createPages(pages, pagesCount, +queri.get('page'))
+    createPages(pages, total_pages, +queri.get('page'))
 
     useEffect(() => {
         dispatch(moviedbAction.getDiscoverMovie({with_genres: id, page: queri.get('page')}))
